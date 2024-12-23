@@ -50,7 +50,10 @@ function App() {
               variants={link}
               whileHover={link.hover}
             >
-              <a className={s.link} href="">
+              <a
+                className={s.link}
+                href="https://drive.google.com/drive/folders/1kuFonhGGDQO38YaHTk6KciGWaPGgKUzL?usp=sharing"
+              >
                 Press Kit
               </a>
             </motion.li>
