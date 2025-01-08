@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import s from "./App.module.css";
 import { link } from "../../motion/link";
+import { analytics } from "../../firebase";
+import { logEvent } from "firebase/analytics";
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
               <a
                 className={s.link}
                 href="https://store.steampowered.com/app/3344240?utm_source=website&utm_campaign=homePage"
+                onClick={() =>
+                  logEvent(analytics, "link_click", { name: "Demo" })
+                }
               >
                 Play Demo
               </a>
@@ -41,6 +46,9 @@ function App() {
               <a
                 className={s.link}
                 href="https://store.steampowered.com/app/3156370?utm_source=website&utm_campaign=homePage"
+                onClick={() =>
+                  logEvent(analytics, "link_click", { name: "Wishlist" })
+                }
               >
                 Wishlist
               </a>
@@ -53,6 +61,9 @@ function App() {
               <a
                 className={s.link}
                 href="https://drive.google.com/drive/folders/1kuFonhGGDQO38YaHTk6KciGWaPGgKUzL?usp=sharing"
+                onClick={() =>
+                  logEvent(analytics, "link_click", { name: "Press Kit" })
+                }
               >
                 Press Kit
               </a>
