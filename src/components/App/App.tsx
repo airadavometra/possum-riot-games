@@ -31,9 +31,7 @@ function App() {
               <a
                 className={s.link}
                 href="https://store.steampowered.com/app/3344240?utm_source=website&utm_campaign=homePage"
-                onClick={() =>
-                  logEvent(analytics, "link_click", { name: "Demo" })
-                }
+                onClick={() => logEvent(analytics, "play_demo")}
               >
                 Play Demo
               </a>
@@ -46,9 +44,7 @@ function App() {
               <a
                 className={s.link}
                 href="https://store.steampowered.com/app/3156370?utm_source=website&utm_campaign=homePage"
-                onClick={() =>
-                  logEvent(analytics, "link_click", { name: "Wishlist" })
-                }
+                onClick={() => logEvent(analytics, "wishlist")}
               >
                 Wishlist
               </a>
@@ -61,9 +57,7 @@ function App() {
               <a
                 className={s.link}
                 href="https://drive.google.com/drive/folders/1kuFonhGGDQO38YaHTk6KciGWaPGgKUzL?usp=sharing"
-                onClick={() =>
-                  logEvent(analytics, "link_click", { name: "Press Kit" })
-                }
+                onClick={() => logEvent(analytics, "press_kit")}
               >
                 Press Kit
               </a>
